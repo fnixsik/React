@@ -1,0 +1,9 @@
+.item {
+    color:powderblue;
+    float: left;
+    margin-left: 15%;
+}
+.item :hover {
+    text-decoration: none;
+    background-color: seashell;
+}
