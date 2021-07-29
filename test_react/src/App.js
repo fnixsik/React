@@ -4,25 +4,28 @@ import Header from './components/header/App_header';
 import Content from './components/content/App_content'; 
 import Footer from './components/footer/App_footer';
 import Menu from './components/menu/App_menu';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <div className="App-main">
+      <BrowserRouter>
+        <div className="App-main">
           <div className="main_header">
-          <Header/>
+            <Header />
           </div>
           <div className="main_menu">
-          <Menu />
+            <Menu />
           </div>
           <div className="main_content">
-          <Content />
+            <Content />
           </div>
           <div className="main_footer">
-          <Footer />
+            <Footer />
           </div>
-      
-      </div>
+
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
