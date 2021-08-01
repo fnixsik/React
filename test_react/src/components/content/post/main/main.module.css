@@ -1,0 +1,16 @@
+.cube {
+    background-color: darkgray;
+    height: 100px;
+    width: 100px;
+    float: left; 
+    margin-left: 50px;
+}
+.text {
+    float: left;
+    height: 700px;
+}
+.cube :hover {
+    background-color: ivory;
+}
+
+
