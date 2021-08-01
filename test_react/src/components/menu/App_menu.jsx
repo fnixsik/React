@@ -9,7 +9,7 @@ const Menu =() =>{
                 <a href="#"><p>новости</p></a>
             </div>
             <div className={i.item}>
-                <a href="#"><p>чат</p></a>
+                <a href="/App_chat"><p>чат</p></a>
             </div>
             <div className={i.item}>
                 <a href="#"><p>музыка</p></a>
