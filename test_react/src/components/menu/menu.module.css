@@ -1,9 +1,10 @@
-.item {
+.item a{
     color:powderblue;
     float: left;
     margin-left: 15%;
+    text-decoration: none;
 }
 .item :hover {
-    text-decoration: none;
+    
     background-color: seashell;
 }

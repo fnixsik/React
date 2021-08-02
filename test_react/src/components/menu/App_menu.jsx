@@ -1,18 +1,19 @@
+import { NavLink } from 'react-router-dom';
 import i from './menu.module.css';
 const Menu =() =>{
     return (
         <div>
             <div className={i.item}>
-                <a href="/main"><p>Главная</p></a>
+                <NavLink to="/main"><p>Главная</p></NavLink>
             </div>
             <div className={i.item}>
-                <a href="/news"><p>новости</p></a>
+                <NavLink to="/news"><p>новости</p></NavLink>
             </div>
             <div className={i.item}>
-                <a href="/chat"><p>чат</p></a>
+                <NavLink to="/chat"><p>чат</p></NavLink>
             </div>
             <div className={i.item}>
-                <a href="/music"><p>музыка</p></a>
+                <NavLink to="/music"><p>музыка</p></NavLink>
             </div>
         </div>
     )
