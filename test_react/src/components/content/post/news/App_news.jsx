@@ -1,5 +1,4 @@
 import i from "./news.module.css"
-
 const News = () =>{
     return(
         <div className={i.post}>

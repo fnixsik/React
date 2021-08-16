@@ -1,4 +1,4 @@
-.cube {
+.chat {
     background-color: darkgray;
     height: 100px;
     width: 100px;
@@ -9,7 +9,7 @@
     float: left;
     height: 700px;
 }
-.cube :hover {
+.chat :hover {
     background-color: ivory;
 }
 

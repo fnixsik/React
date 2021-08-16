@@ -1,27 +1,28 @@
+import React from 'react';
 import i from "./main.module.css"
 
-const Main=() =>{
-
-    return(
+const Main=(props) =>{
+    console.log (props);
+    let newstate = props.stateTree.set.map(f => <Bost name={f.name} age={f.age} />);
+    return(  
         <div className = {i.text}>
-            <p>Главная Страница </p>
-
-                <Block text="сдесь могла быть ваша реклама" />
-                <Block />
-                <Block text="vtite here !" />
-                <Block text="ne scetytsy"/>
-                <Block text = "wellcom"/>
-            
+            <p>Главная Страница </p> 
+                {newstate}
         </div>
+        
     )
 
 }
+
 export default Main;
 
-const Block = (props) => {
+const Bost=(props) => {
     return(
-        <div className ={i.cube}>
-            <p>{props.text}</p>
-        </div>
+        <div className = {i.chat}>
+                
+                <p>name: {props.name}</p>
+                <p>age: {props.age} </p>
+                
+                </div> 
     )
 }

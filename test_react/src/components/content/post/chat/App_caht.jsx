@@ -1,3 +1,4 @@
+import React from 'react';
 import i from "./chat.module.css"
 
 const Chat = () => {

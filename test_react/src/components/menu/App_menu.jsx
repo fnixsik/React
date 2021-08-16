@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import i from './menu.module.css';
 const Menu =() =>{
