@@ -1,0 +1,18 @@
+.main {
+    height:  150px;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 1px 0px;
+}
+.link {
+    float: left;
+    padding-top: 40px;
+    font-size: 32px;
+    padding-left: 350px;
+    font-style: italic;
+}
+.link a {
+    text-decoration: none;
+}
+.link :hover {
+
+}

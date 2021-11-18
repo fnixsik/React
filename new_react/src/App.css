@@ -1,0 +1,24 @@
+.App {
+  display: grid;
+  grid-template-areas: "h h"
+                       "m m"
+                       "c c"
+                       "f f";
+}
+.head {
+  grid-area: h;
+  
+}
+
+.menu {
+  grid-area: m;
+
+}
+
+.mainPage {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: f;
+}

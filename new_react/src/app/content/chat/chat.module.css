@@ -1,0 +1,19 @@
+.chat {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.userChat a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 50px;
+    
+}
+.userChat {
+    padding-top: 15px;
+}
+
+.chats {
+}
+.users {
+    
+}
