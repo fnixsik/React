@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createRef } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/App_header';
@@ -8,7 +8,6 @@ import Menu from './components/menu/App_menu';
 import { BrowserRouter } from 'react-router-dom';
 
 const App= (props) => {
-  
   return (
     <div className="App">
       <BrowserRouter>
@@ -20,7 +19,7 @@ const App= (props) => {
             <Menu />
           </div>
           <div className="main_content">
-            <Content stateToo={props.state} />
+            <Content stateToo={props.state}/>
           </div>
           <div className="main_footer">
             <Footer />

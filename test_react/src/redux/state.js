@@ -13,11 +13,16 @@ let state={
             {name : "valera", age : "31"},
             {name : "genady", age : "17"}
           
-          ]
+          ],
+        
+        newPost : ""
     },
 
     chatPage : {
 
     }
 }
+
+
+
 export default state;

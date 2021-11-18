@@ -16,6 +16,9 @@ const Menu =() =>{
             <div className={i.item}>
                 <NavLink to="/music"><p>музыка</p></NavLink>
             </div>
+            <div className={i.item}>
+                <NavLink to="/users"><p>пользователи</p></NavLink>
+            </div>
         </div>
     )
 }

@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import i from "./main.module.css"
 
-const Main=(props) =>{
-    console.log (props);
-    let newstate = props.stateTree.set.map(f => <Bost name={f.name} age={f.age} />);
+const Main=() =>{
+    const dispatch = useDispatch()
+    const cash = useSelector(state => state.cash)
+
+    const addCash = (cash) => {
+        dispatch ({type: "ADD_pay", payload: cash})
+    }
+
+    const getCash = (cash) => {
+        dispatch ({type: "GET_pay", payload: cash})
+    }
+
+    console.log(cash)
+
     return(  
         <div className = {i.text}>
             <p>Главная Страница </p> 
-                {newstate}
+            <h1>{cash}</h1>
+
+            <button onClick={() => addCash(Number(prompt()))}>add</button>
+            <button onClick={() => getCash(Number(prompt()))}>get</button>    
         </div>
         
     )
@@ -15,14 +31,3 @@ const Main=(props) =>{
 }
 
 export default Main;
-
-const Bost=(props) => {
-    return(
-        <div className = {i.chat}>
-                
-                <p>name: {props.name}</p>
-                <p>age: {props.age} </p>
-                
-                </div> 
-    )
-}
